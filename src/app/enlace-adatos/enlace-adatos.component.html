@@ -1,3 +1,39 @@
-<p>
-  enlace-adatos works!
-</p>
+<div>
+  <h1> Enlace a Datos (Data Binding)</h1>
+  <div> Ejemplos de las 4 posibilidades:
+    <ul>
+      <ol> Enlazar datos (mostrar miembro de la clase): {{miembroClase}}</ol>
+      <ol> Enlazar atributo:  [atributo]="algo"</ol>
+      <ol> Enlazar evento: (evento)="metodo()"</ol>
+      <ol> Enlace bidireccional: [(ngModel)]="algo" </ol>
+    </ul>
+  </div><br>
+      <div>
+        <!-- Ejemplo de enlace a evento. Asocio onSubmit con el método addTodo de la clase enlace-adatos-->
+      <form (submit)="capturaEventoForm($event)">
+      <input [(ngModel)]="contenidoDelInput" (keydown.enter)="pulsadaTecla($event)" name="miInput">
+        <!-- En boton establezo atributo 'disabled' según sea contenidoDelInput
+        Además genera un evento 'botonPulsado'-->
+        <button  type="button" [disabled]="contenidoDelInput==''" (click)="botonPulsado()">Guardar</button>
+      </form>    
+      </div>
+
+      <!-- Dos Divs que utilizan enlace a propiedad hidden. Se consigue así que si la
+      variable contenidoDelInput está vacía se muestra uno y sino el otro -->
+      <div [hidden]="contenidoDelInput">
+        (Este Div se muestra porque el input está vacio)
+      </div>
+
+      <div [hidden]="!contenidoDelInput">
+        Typing: {{ contenidoDelInput }}
+      </div>
+      <br><br>
+      <!-- Asocio el checkbox con un miembro booleano. -->
+      <input type="checkbox" [(ngModel)]="listaOpciones.seleccionada" />
+      <span>{{ listaOpciones.opcion }}</span>
+      <!-- El boton cambia el booleano asociado al checkbox. Se comprueba así
+      como un cambio en el dato afecta también a la vista (html) -> Bidireccional -->
+      <button  type="button" (click)="listaOpciones.seleccionada=!listaOpciones.seleccionada">Cambia Seleccion</button>
+
+  </div>
+

@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { EnlaceADatosComponent } from './enlace-adatos/enlace-adatos.component';
+import { DirectivasEstructuralesComponent } from './directivas-estructurales/directivas-estructurales.component';
+import { ComponenteConEntradaSalidaComponent } from './componente-con-entrada-salida/componente-con-entrada-salida.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EnlaceADatosComponent
+    EnlaceADatosComponent,
+    DirectivasEstructuralesComponent,
+    ComponenteConEntradaSalidaComponent
   ],
   imports: [
     BrowserModule,

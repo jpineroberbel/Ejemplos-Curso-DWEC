@@ -1,0 +1,26 @@
+<h1>
+  Directivas Estructurales: ngIf, ngSwitch, ngFor, ngClass
+</h1>
+
+<form (submit)="capturaEventoForm($event)">
+<input [(ngModel)]="contenidoDelInput" name="miInput">
+</form>    
+
+<!-- EJEMPLO ngIf y ngClass-->
+<div *ngIf="contenidoDelInput.length<5" [ngClass]="{'error':contenidoDelInput.length<3,'aviso':contenidoDelInput.length>=3}"> El texto del input debe tener al menos 5 caracteres</div>
+
+ <!-- EJEMPLO ngSwitch -->
+<span [ngSwitch]="contenidoDelInput">
+  <p *ngSwitchCase="'medico'">Visita Medica?</p>
+  <p *ngSwitchCase="'viaje'">A donde vamos?</p>
+  <p *ngSwitchDefault>Otra categoria</p>
+</span>
+
+ <!-- EJEMPLO ngFor y ngClass -->
+      <ul>
+      <li *ngFor="let opcion of listaOpciones; let i=index">
+        <input type="checkbox" class="checkbox" [(ngModel)]="opcion.seleccionada" />
+      <span [ngClass]="{'checked': opcion.completed}">{{ opcion.opcion }}</span>
+      <span (click)="eventoUsandoIndice(i)">[X]</span>
+        </li>
+        </ul>

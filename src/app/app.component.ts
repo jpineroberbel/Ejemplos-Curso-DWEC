@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  capturaEvento(evento){
+    console.log("He recibido un evento lanzado por un componente con el texto: "+evento)
+  }
 }

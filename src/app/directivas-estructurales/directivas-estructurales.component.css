@@ -1,0 +1,12 @@
+  .error {
+    color: red;
+  }
+
+    .aviso {
+    color: orange;
+  }
+
+
+ .checked {
+    text-decoration: line-through;
+  }
