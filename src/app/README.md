@@ -7,5 +7,6 @@ Se crean diferentes componentes para explicar cada uno de los pasos vistos en cl
 4. ¿Cómo crear y usar un Servicio (acceso a datos básicos)?: usar-servicio + servicio-datos-estaticos
 5. ¿Cómo realizar una petición AJAX (HTTP)?: peticion-ajaxsin-servicio
 6. ¿Cómo encapsular acceso a datos mediante AJAX en servicio?: usar-servicio-ajax + ajax.service
-7. ¿Cómo hacer el logueo con una red social (Facebook)?: login-facebook
+7. ¿Cómo definir rutas (navegación entre vistas)?: app-module + app.component
+8. ¿Cómo hacer el logueo con una red social (Facebook)?: login-facebook
 

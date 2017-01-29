@@ -1,4 +1,18 @@
 
+
+
+<!--menú de navegación, sin href-->  
+<nav>  
+
+  <a [routerLink]="['/']" >Inicio</a>
+  <a [routerLink]="['/Enlace_Datos']">Ejemplo enlace a datos</a>
+  <a [routerLink]="['/Directivas']">Directivas</a>
+    <a [routerLink]="['/EntradaSalida']">Componentes con entrada/salida</a>
+</nav>  
+<!--Este componente nativo hace que el enrutador cargue una página dinámicamente-->  
+<router-outlet></router-outlet>  
+
+<!--
 <app-enlace-adatos></app-enlace-adatos>
 
 <app-directivas-estructurales></app-directivas-estructurales>
@@ -11,3 +25,4 @@
 <app-peticion-ajaxsin-servicio></app-peticion-ajaxsin-servicio>
 
 <app-usar-servicio></app-usar-servicio>
+-->
