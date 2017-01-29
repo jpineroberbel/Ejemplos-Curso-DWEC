@@ -9,9 +9,10 @@ import {FacebookService, FacebookLoginResponse, FacebookInitParams} from 'ng2-fa
   providers: [FacebookService]
 })
 export class LoginFacebookComponent implements OnInit {
-
+  nombreUsuario:string;
   constructor(private fb: FacebookService) { 
 
+    this.nombreUsuario="Anonimo";
 let fbParams: FacebookInitParams = {
                                    appId: '203991593407329',
                                    xfbml: true,
@@ -27,9 +28,9 @@ let fbParams: FacebookInitParams = {
 logueadoEnFacebook(response)
 {
   console.log("entra en logueado");
-  this.fb.api('/me').then(
-        function(result) {
+  this.fb.api('/me').then( (result)=>{
           console.log(result);
+          this.nombreUsuario=result.name;
         });
 }
   ngOnInit() {

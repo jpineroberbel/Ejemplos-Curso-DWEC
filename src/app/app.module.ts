@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { EnlaceADatosComponent } from './enlace-adatos/enlace-adatos.component';
 import { DirectivasEstructuralesComponent } from './directivas-estructurales/directivas-estructurales.component';
 import { ComponenteConEntradaSalidaComponent } from './componente-con-entrada-salida/componente-con-entrada-salida.component';
+import { LoginFacebookComponent } from './login-facebook/login-facebook.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EnlaceADatosComponent,
     DirectivasEstructuralesComponent,
-    ComponenteConEntradaSalidaComponent
+    ComponenteConEntradaSalidaComponent,
+    LoginFacebookComponent
   ],
   imports: [
     BrowserModule,
