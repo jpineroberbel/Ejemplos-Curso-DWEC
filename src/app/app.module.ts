@@ -8,6 +8,10 @@ import { EnlaceADatosComponent } from './enlace-adatos/enlace-adatos.component';
 import { DirectivasEstructuralesComponent } from './directivas-estructurales/directivas-estructurales.component';
 import { ComponenteConEntradaSalidaComponent } from './componente-con-entrada-salida/componente-con-entrada-salida.component';
 import { LoginFacebookComponent } from './login-facebook/login-facebook.component';
+import { ServicioDatosEstaticosService } from './servicio-datos-estaticos.service'
+import { UsarServicioComponent } from './usar-servicio/usar-servicio.component';
+import { UsarServicioAJAXComponent } from './usar-servicio-ajax/usar-servicio-ajax.component';
+import { PeticionAJAXSinServicioComponent } from './peticion-ajaxsin-servicio/peticion-ajaxsin-servicio.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +19,17 @@ import { LoginFacebookComponent } from './login-facebook/login-facebook.componen
     EnlaceADatosComponent,
     DirectivasEstructuralesComponent,
     ComponenteConEntradaSalidaComponent,
-    LoginFacebookComponent
+    LoginFacebookComponent,
+    UsarServicioComponent,
+    UsarServicioAJAXComponent,
+    PeticionAJAXSinServicioComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ ServicioDatosEstaticosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
