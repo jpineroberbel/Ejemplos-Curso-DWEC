@@ -24,6 +24,9 @@ const routes: Routes = [
     { path: 'Enlace_Datos', component: EnlaceADatosComponent },
     { path: 'Directivas', component: DirectivasEstructuralesComponent },
     { path: 'EntradaSalida', component: ComponenteConEntradaSalidaComponent },
+    { path: 'LoginFacebook', component: LoginFacebookComponent },
+    { path: 'AJAXSinServicio', component: PeticionAJAXSinServicioComponent },
+     { path: 'servicio', component: UsarServicioComponent },
     { path: 'detalle/:id', component: DetalleComponent },
     // Cualquier otra ruta no considerada en las entradas anteriores -> ERROR
     { path: '**', component: PageNotFoundComponent }
