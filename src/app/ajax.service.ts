@@ -8,7 +8,9 @@ export class AJAXService {
   listaNoticias;
   constructor(private ajax:Http) { }
 
-   get noticias(){
-    return this.ajax.get("http://www.rtve.es/api/noticias.json").map(response=>response.json());
-    }
+  search() {
+    return this.ajax
+      .get('http://www.rtve.es/api/noticias.json')
+      .map(response => response.json());
+  }
 }

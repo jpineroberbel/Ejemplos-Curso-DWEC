@@ -16,6 +16,8 @@ import { PeticionAJAXSinServicioComponent } from './peticion-ajaxsin-servicio/pe
 import { MaestroComponent } from './maestro/maestro.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RutasHijasYParametrosComponent } from './rutas-hijas-yparametros/rutas-hijas-yparametros.component';
+import { FiltroPipe } from './filtro.pipe';
 
 // Se definen las rutas de la app. Cada una se corresponde con un componente
 const routes: Routes = [
@@ -26,8 +28,14 @@ const routes: Routes = [
     { path: 'EntradaSalida', component: ComponenteConEntradaSalidaComponent },
     { path: 'LoginFacebook', component: LoginFacebookComponent },
     { path: 'AJAXSinServicio', component: PeticionAJAXSinServicioComponent },
+      { path: 'AJAXConServicio', component: UsarServicioAJAXComponent },
      { path: 'servicio', component: UsarServicioComponent },
-    { path: 'detalle/:id', component: DetalleComponent },
+    { path: 'rutasHijas', component: RutasHijasYParametrosComponent,
+        children:[
+          {path: "parametros", component: UsarServicioComponent}
+
+        ] }, 
+    { path: 'detalle/:param1', component: DetalleComponent },
     // Cualquier otra ruta no considerada en las entradas anteriores -> ERROR
     { path: '**', component: PageNotFoundComponent }
 ];
@@ -45,7 +53,9 @@ export const routing = RouterModule.forRoot(routes);
     PeticionAJAXSinServicioComponent,
     MaestroComponent,
     DetalleComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    RutasHijasYParametrosComponent,
+    FiltroPipe
   ],
   imports: [
     BrowserModule,
