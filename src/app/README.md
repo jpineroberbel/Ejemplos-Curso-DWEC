@@ -8,5 +8,8 @@ Se crean diferentes componentes para explicar cada uno de los pasos vistos en cl
 5. ¿Cómo realizar una petición AJAX (HTTP)?: peticion-ajaxsin-servicio
 6. ¿Cómo encapsular acceso a datos mediante AJAX en servicio?: usar-servicio-ajax + ajax.service
 7. ¿Cómo definir rutas (navegación entre vistas)?: app-module + app.component
-8. ¿Cómo hacer el logueo con una red social (Facebook)?: login-facebook
+8. ¿Cómo definir rutas anidadas?: rutas-hijas-yparametros
+9. ¿Cómo pasar parámetro en URL (Ruta)?: detalle
+10. ¿Cómo hacer uso de filtros (pipes)?: uso-pipes
+11. ¿Cómo hacer el logueo con una red social (Facebook)?: login-facebook
 

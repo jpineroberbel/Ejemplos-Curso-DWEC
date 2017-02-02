@@ -1,0 +1,9 @@
+<h1> Uso de Pipes </h1>
+
+<p>Hoy es {{ fechaActual | date }}</p>
+<p>Hoy es {{ fechaActual | date:'shortTime'  }}</p>
+<p>Hoy es {{ fechaActual | date:'EEEE mm-ss'  }}</p>
+<p>El coste es de {{valor | currency:'USD':false}}</p>
+<p>El coste es de {{valor | currency:'EUR':true}}</p>
+<p>{{cadena}} pasada a mayusculas: {{cadena | uppercase}}</p>
+
