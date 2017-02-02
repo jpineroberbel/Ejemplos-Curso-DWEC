@@ -19,6 +19,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { RutasHijasYParametrosComponent } from './rutas-hijas-yparametros/rutas-hijas-yparametros.component';
 import { FiltroPipe } from './filtro.pipe';
 import { UsoPipesComponent } from './uso-pipes/uso-pipes.component';
+import { FiltrarDatosComponent } from './filtrar-datos/filtrar-datos.component';
 
 // Se definen las rutas de la app. Cada una se corresponde con un componente
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
       { path: 'AJAXConServicio', component: UsarServicioAJAXComponent },
      { path: 'servicio', component: UsarServicioComponent },
      { path: 'usoPipes', component: UsoPipesComponent },
+     { path: 'filtro', component: FiltrarDatosComponent },
     { path: 'rutasHijas', component: RutasHijasYParametrosComponent,
         children:[
           {path: "parametros", component: UsarServicioComponent}
@@ -58,7 +60,8 @@ export const routing = RouterModule.forRoot(routes);
     PageNotFoundComponent,
     RutasHijasYParametrosComponent,
     FiltroPipe,
-    UsoPipesComponent
+    UsoPipesComponent,
+    FiltrarDatosComponent
   ],
   imports: [
     BrowserModule,

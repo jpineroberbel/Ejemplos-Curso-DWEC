@@ -5,8 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FiltroPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(value: any, edadMinima?: any): any {
+    console.log(value)
+    return value.filter(person => {
+      return person.age >= edadMinima;
+    });
+    
   }
 
 }

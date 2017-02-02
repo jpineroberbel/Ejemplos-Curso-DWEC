@@ -1,0 +1,14 @@
+<h1> Cómo filtrar datos </h1>
+<div>  
+  <p>
+  0
+   <input type="range" min="0" max="100" [(ngModel)]="sliderValue" /> 
+  100
+  </p>
+  <span>Mínima edad a mostrar: {{ sliderValue }}</span>
+    <ul>
+      <li *ngFor="let person of people | filtro:sliderValue ">
+        {{ person.name }} ({{ person.age }})
+      </li>
+    </ul>
+</div>  

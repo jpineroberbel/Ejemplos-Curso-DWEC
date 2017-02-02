@@ -11,5 +11,6 @@ Se crean diferentes componentes para explicar cada uno de los pasos vistos en cl
 8. ¿Cómo definir rutas anidadas?: rutas-hijas-yparametros
 9. ¿Cómo pasar parámetro en URL (Ruta)?: detalle
 10. ¿Cómo hacer uso de filtros (pipes)?: uso-pipes
-11. ¿Cómo hacer el logueo con una red social (Facebook)?: login-facebook
+11. ¿Cómo filtrar datos (búsquedas)?: filtrar-datos
+12. ¿Cómo hacer el logueo con una red social (Facebook)?: login-facebook
 
