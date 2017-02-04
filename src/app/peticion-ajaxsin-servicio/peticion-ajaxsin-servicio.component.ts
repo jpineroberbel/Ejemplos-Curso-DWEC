@@ -6,7 +6,7 @@ import { routerTransition } from '../router.animations';
   selector: 'app-peticion-ajaxsin-servicio',
   templateUrl: './peticion-ajaxsin-servicio.component.html',
   styleUrls: ['./peticion-ajaxsin-servicio.component.css'],
-       animations: [routerTransition()],
+  animations: [routerTransition()],
   host: {'[@routerTransition]': ''}
 })
 export class PeticionAJAXSinServicioComponent implements OnInit {

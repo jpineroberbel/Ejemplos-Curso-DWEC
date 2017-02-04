@@ -23,6 +23,7 @@ import { FiltrarDatosComponent } from './filtrar-datos/filtrar-datos.component';
 import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
 import { AlertModule } from 'ng2-bootstrap';
 
+
 // Se definen las rutas de la app. Cada una se corresponde con un componente
 const routes: Routes = [
     // La ruta '' indica la ruta por defecto (antiguo index.html)

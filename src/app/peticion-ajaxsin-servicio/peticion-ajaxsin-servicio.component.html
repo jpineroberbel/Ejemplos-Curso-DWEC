@@ -6,6 +6,8 @@
 <div *ngIf="!listaNoticias"> Pidiendo datos.....</div>
 <div *ngIf="listaNoticias">
 He recibido un total de {{listaNoticias.length}} noticias
-<p *ngFor="let noticia of listaNoticias">{{noticia.title}}</p>
-</div>
+<ul class="list-group">
+  
+<li class="list-group-item" *ngFor="let noticia of listaNoticias">{{noticia.title}}</li>
+</ul>
 </div>

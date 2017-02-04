@@ -11,16 +11,19 @@ import { routerTransition } from '../router.animations';
 })
 export class UsarServicioAJAXComponent implements OnInit {
 
-  artistas: any;
+  listaNoticias: any;
 
   constructor(private servicio:AJAXService) {
   
    }
 
   ngOnInit() {
-    this.servicio.search().subscribe(
-      data => {this.artistas=data; console.log(this.artistas);},
+    this.servicio.searchV2().subscribe(
+      data => {this.listaNoticias=data.page.items; console.log(this.listaNoticias);},
     );
+
+  
   }
 
 }
+     
