@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { routerTransition } from '../router.animations';
 
 @Component({
   selector: 'app-enlace-adatos',
   templateUrl: './enlace-adatos.component.html',
-  styleUrls: ['./enlace-adatos.component.css']
+  styleUrls: ['./enlace-adatos.component.css'],
+  animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
+
 })
 export class EnlaceADatosComponent implements OnInit {
 

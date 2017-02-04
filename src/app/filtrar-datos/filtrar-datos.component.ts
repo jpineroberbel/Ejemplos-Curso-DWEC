@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FiltroPipe } from '../filtro.pipe'
-
+import { routerTransition } from '../router.animations';
 @Component({
   selector: 'app-filtrar-datos',
   templateUrl: './filtrar-datos.component.html',
-  styleUrls: ['./filtrar-datos.component.css']
+  styleUrls: ['./filtrar-datos.component.css'],
+    animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class FiltrarDatosComponent implements OnInit {
 

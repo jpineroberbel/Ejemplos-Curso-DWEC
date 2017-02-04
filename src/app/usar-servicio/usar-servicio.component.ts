@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicioDatosEstaticosService } from '../servicio-datos-estaticos.service'
-
+import { routerTransition } from '../router.animations';
 @Component({
   selector: 'app-usar-servicio',
   templateUrl: './usar-servicio.component.html',
   styleUrls: ['./usar-servicio.component.css'],
-  providers: [ ServicioDatosEstaticosService ]
+  providers: [ ServicioDatosEstaticosService ],
+     animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class UsarServicioComponent implements OnInit {
 

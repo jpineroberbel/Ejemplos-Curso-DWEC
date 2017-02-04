@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-
+import { routerTransition } from '../router.animations';
 @Component({
   selector: 'app-directivas-estructurales',
   templateUrl: './directivas-estructurales.component.html',
-  styleUrls: ['./directivas-estructurales.component.css']
+  styleUrls: ['./directivas-estructurales.component.css'],
+    animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class DirectivasEstructuralesComponent implements OnInit {
   

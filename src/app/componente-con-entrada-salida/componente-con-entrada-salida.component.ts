@@ -1,9 +1,11 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { routerTransition } from '../router.animations';
 @Component({
   selector: 'app-componente-con-entrada-salida',
   templateUrl: './componente-con-entrada-salida.component.html',
-  styleUrls: ['./componente-con-entrada-salida.component.css']
+  styleUrls: ['./componente-con-entrada-salida.component.css'],
+     animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class ComponenteConEntradaSalidaComponent implements OnInit {
   @Input() atributoEntrada: string;
