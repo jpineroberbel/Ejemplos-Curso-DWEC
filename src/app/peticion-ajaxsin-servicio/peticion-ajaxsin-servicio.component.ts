@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { routerTransition } from '../router.animations';
 
 @Component({
   selector: 'app-peticion-ajaxsin-servicio',
   templateUrl: './peticion-ajaxsin-servicio.component.html',
-  styleUrls: ['./peticion-ajaxsin-servicio.component.css']
+  styleUrls: ['./peticion-ajaxsin-servicio.component.css'],
+       animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class PeticionAJAXSinServicioComponent implements OnInit {
   listaNoticias: any;

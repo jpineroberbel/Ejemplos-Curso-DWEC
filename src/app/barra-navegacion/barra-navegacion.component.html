@@ -13,14 +13,9 @@
           <ul class="nav navbar-nav">
             <li routerLinkActive="active"><a [routerLink]="['/Enlace_Datos']" >¿Cómo enlazar datos?</a></li>
             <li routerLinkActive="active"><a [routerLink]="['/Directivas']">Directivas</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['/EntradaSalida']">Componentes con entrada/salida</a></li>
-            <li class="dropdown" routerLinkActive="active">
-              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AJAX (Servicio HTTP) <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li routerLinkActive="active"><a routerLink="/AJAXSinServicio">Datos AJAX Sin Servicio</a></li>
-                <li routerLinkActive="active"><a routerLink="/AJAXConServicio">Datos AJAX Desde Servicio</a></li>            
-              </ul>
-            </li>
+            <li routerLinkActive="active"><a [routerLink]="['/EntradaSalida']">Entrada/salida</a></li>
+            <li routerLinkActive="active"><a routerLink="/AJAXSinServicio">HTTP Sin Servicio</a></li>
+            <li routerLinkActive="active"><a routerLink="/AJAXConServicio">HTTP Desde Servicio</a></li>            
             <li routerLinkActive="active"> <a routerLink="/servicio">Uso de Servicio</a></li>
             <li routerLinkActive="active"><a routerLink="/usoPipes">Pipes</a></li>
             <li routerLinkActive="active"> <a routerLink="/filtro">Filtrar Datos</a></li>
