@@ -14,3 +14,4 @@ Se crean diferentes componentes para explicar cada uno de los pasos vistos en cl
 11. ¿Cómo filtrar datos (búsquedas)?: filtrar-datos
 12. ¿Cómo hacer el logueo con una red social (Facebook)?: login-facebook
 
+El proyecto hace uso de Bootstrap mediante el componente ng2-bootstrap que permite integrar este mediante componentes o haciendo uso de sus clases
