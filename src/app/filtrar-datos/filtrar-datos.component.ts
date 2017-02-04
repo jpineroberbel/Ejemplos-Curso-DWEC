@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FiltroPipe } from '../filtro.pipe'
+
 @Component({
   selector: 'app-filtrar-datos',
   templateUrl: './filtrar-datos.component.html',

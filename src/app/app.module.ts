@@ -20,6 +20,8 @@ import { RutasHijasYParametrosComponent } from './rutas-hijas-yparametros/rutas-
 import { FiltroPipe } from './filtro.pipe';
 import { UsoPipesComponent } from './uso-pipes/uso-pipes.component';
 import { FiltrarDatosComponent } from './filtrar-datos/filtrar-datos.component';
+import { BarraNavegacionComponent } from './barra-navegacion/barra-navegacion.component';
+import { AlertModule } from 'ng2-bootstrap';
 
 // Se definen las rutas de la app. Cada una se corresponde con un componente
 const routes: Routes = [
@@ -61,13 +63,15 @@ export const routing = RouterModule.forRoot(routes);
     RutasHijasYParametrosComponent,
     FiltroPipe,
     UsoPipesComponent,
-    FiltrarDatosComponent
+    FiltrarDatosComponent,
+    BarraNavegacionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AlertModule.forRoot()
   ],
   providers: [ ServicioDatosEstaticosService],
   bootstrap: [AppComponent]

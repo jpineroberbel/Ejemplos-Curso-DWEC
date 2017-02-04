@@ -1,3 +1,4 @@
+<div class="container">
 <h1> Componente que pide datos mediante AJAX (HTTP) </h1>
 <p (click)="pideNoticias()">
   clicka para hacer peticion ajax
@@ -6,4 +7,5 @@
 <div *ngIf="listaNoticias">
 He recibido un total de {{listaNoticias.length}} noticias
 <p *ngFor="let noticia of listaNoticias">{{noticia.title}}</p>
+</div>
 </div>
