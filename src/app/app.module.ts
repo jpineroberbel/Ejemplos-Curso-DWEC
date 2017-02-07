@@ -37,6 +37,7 @@ const routes: Routes = [
      { path: 'servicio', component: UsarServicioComponent },
      { path: 'usoPipes', component: UsoPipesComponent },
      { path: 'filtro', component: FiltrarDatosComponent },
+     { path: 'loginFB', component: LoginFacebookComponent },
     { path: 'rutasHijas', component: RutasHijasYParametrosComponent,
         children:[
           {path: "parametros", component: UsarServicioComponent}
