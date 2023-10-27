@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        window.onload = () => window.addEventListener('deviceorientation', handleOrientation);
+        let velX =0, velY=0;
 
+        window.onload = () => {
+            window.addEventListener('deviceorientation', handleOrientation);
+            window.requestAnimationFrame(buclejuego)
+        }
         function handleOrientation(event) {
             const alpha = event.alpha;
             const beta = event.beta;
             const gamma = event.gamma;
            document.getElementById("h").innerHTML = alpha+ " "+ beta+" "+gamma;
-           document.getElementById("circulo").setAttribute("cx", beta);
-           document.getElementById("circulo").setAttribute("cy", gamma);
+           
+           velX+= gamma;
+           velY+= beta;
+        }
+
+        function buclejuego()
+        {
+
+            document.getElementById("circulo").setAttribute("cy", velY);
+            document.getElementById("circulo").setAttribute("cx", velX);
+            window.requestAnimationFrame(buclejuego)
         }
     </script>
 </head>
