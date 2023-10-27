@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.addEventListener('deviceorientation', handleOrientation);
+
+        function handleOrientation(event) {
+            const alpha = event.alpha;
+            const beta = event.beta;
+            const gamma = event.gamma;
+           document.getElementById("h").innerHTML = alpha+ " "+ beta+" "+gamma;
+        }
+    </script>
+</head>
+<body>
+    <div id="h"></div>
+</body>
+</html>
