@@ -12,10 +12,15 @@
             const beta = event.beta;
             const gamma = event.gamma;
            document.getElementById("h").innerHTML = alpha+ " "+ beta+" "+gamma;
+           document.getElementById("circulo").setAttribute("cx", beta);
+           document.getElementById("circulo").setAttribute("cy", gamma);
         }
     </script>
 </head>
 <body>
     <div id="h"></div>
+    <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circulo" cx="60" cy="60" r="50" />
+      </svg>
 </body>
 </html>
